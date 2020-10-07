@@ -6,7 +6,7 @@ namespace Projekt_2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Kol Khara");
+            Console.WriteLine("marcus");
         }
     }
 }
