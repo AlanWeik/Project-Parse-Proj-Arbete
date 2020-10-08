@@ -7,10 +7,13 @@ namespace ProjektArbete
 {
     public class Program
     {
-
         static void Main(string[] args)
         {
+            ReturnValueFromStringToDouble();
+        }
 
+        public static string ReturnValueFromStringToDouble()
+        {
             string input;
 
             Dictionary<string, double> numbers = new Dictionary<string, double>();
@@ -29,12 +32,7 @@ namespace ProjektArbete
             Console.WriteLine("Choose a number between zero and ten:");
             input = Console.ReadLine();
 
-            if (input == "zero")
-            {
-                Console.WriteLine(numbers["zero"]);
-            }
-
-
+            return input;
 
         }
     }

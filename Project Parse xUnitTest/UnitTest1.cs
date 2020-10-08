@@ -1,43 +1,48 @@
+using Microsoft.VisualStudio.TestPlatform.Utilities;
+using Newtonsoft.Json.Serialization;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Security.Cryptography.X509Certificates;
 using Xunit;
 using Xunit.Sdk;
+using Xunit.Abstractions;
+
 
 namespace Project_Parse_xUnitTest
 {
     public class UnitTest1AW
     {
+        private readonly ITestOutputHelper output;
+
+        public UnitTest1AW(ITestOutputHelper output)
+        {
+            this.output = output;
+        }
+
+
         [Fact]
         public void ConvertsOrNo()
         {
             {
+                //string input = "one";
+                var number = new Dictionary <string, double>();
+                number.Add("one", 1);
+                if (number.ContainsValue(1))
+                {
+                    return;
+                }
 
-                var one = new Dictionary <double, string>();
-                one.Add(1, "one");
-                Console.WriteLine(one[1]);
+                /*if (input == "one")
+                {
+                    Assert.Equal(input, number); // OM Dictionary <string, double> blir det Assert.Equal(1, number["one"]);
+                }
+                else
+                {
+                    Console.WriteLine("Wrong type of input, write 'one' damnit.");
+                }*/
 
             }
         }
     }
 }
-
-    /*
-    //Arrange
-    string PhoneNumber = "zero, seven, nine, three, four, eight, one, six, six, three";
-    int actual = 0;
-
-    //Act
-    bool isParsable = double.Parse(PhoneNumber, out actual);
-
-    //Assert
-    if (isParsable)
-        Console.WriteLine(actual);
-    else
-        Console.WriteLine("Could not be parsed");
-    */
-
-
-    
-
