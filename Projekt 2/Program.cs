@@ -1,67 +1,40 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using System.Security.Cryptography.X509Certificates;
 
 namespace ProjektArbete
 {
     public class Program
     {
+
         static void Main(string[] args)
         {
-            /*string hello = "twelve";
-            int twelve = 12;
-            Convert.ToChar(hello);
-            Convert.ToUInt64(hello);*/
-
-            /*var one = new Dictionary <double, string>();
-            one.Add(1, "one");
-            Console.WriteLine(one[1]);*/
-
-            /*var two = new Dictionary<double, string>();
-            two.Add(2, "two");
-            Console.WriteLine(two[2]);*/
-
-            /*var stringNumbers = new Dictionary<string, double>();
-            Console.Write("Type numbers (in letters): ");
-            string input = Console.ReadLine();
-            stringNumbers.Add("one", 1); // Adderar värde .Add() metod
-
-
-            if (input == "one")
-            {
-                Console.WriteLine(stringNumbers["one"]);
-            }
-            Console.ReadKey();*/
-
 
             string input;
-            do
+
+            Dictionary<string, double> numbers = new Dictionary<string, double>();
+            numbers.Add("zero", 0);
+            numbers.Add("one", 1);
+            numbers.Add("two", 2);
+            numbers.Add("three", 3);
+            numbers.Add("four", 4);
+            numbers.Add("five", 5);
+            numbers.Add("six", 6);
+            numbers.Add("seven", 7);
+            numbers.Add("eight", 8);
+            numbers.Add("nine", 9);
+            numbers.Add("ten", 10);
+
+            Console.WriteLine("Choose a number between zero and ten:");
+            input = Console.ReadLine();
+
+            if (input == "zero")
             {
-
-                try
-                {
-                    var stringNumbers = new Dictionary<string, double>();
-                    Console.Write("Type numbers:  ");
-                    input = Console.ReadLine();
-                    stringNumbers.Add("one", 1); // Adderar värde .Add() metod
-                    if (input == "one")
-                    {
-                        Console.WriteLine(stringNumbers["one"]);
-                    }
-                    if (input != "one")
-                    {
-                        Console.WriteLine($"Fel inmatning! Skriv bara 'one' ");
-                    }
-                    Console.ReadKey();
-                }
-                catch (Exception e)
-                {
-                    Console.WriteLine(e);
-                    throw;
-                }
-
+                Console.WriteLine(numbers["zero"]);
             }
-            while (input != "one");
+
+
 
         }
     }
