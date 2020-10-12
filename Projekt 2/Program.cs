@@ -29,9 +29,56 @@ namespace ProjektArbete
             numbers.Add("nine", 9);
             numbers.Add("ten", 10);
 
+
             Console.WriteLine("Choose a number between zero and ten:");
             input = Console.ReadLine();
 
+
+            if (input == "zero")
+            {
+                Console.WriteLine(numbers["zero"]);
+            }
+            if (input == "one")
+            {
+                Console.WriteLine(numbers["one"]);
+            }
+            if (input == "two")
+            {
+                Console.WriteLine(numbers["two"]);
+            }
+            if (input == "three")
+            {
+                Console.WriteLine(numbers["three"]);
+            }
+            if (input == "four")
+            {
+                Console.WriteLine(numbers["four"]);
+            }
+            if (input == "five")
+            {
+                Console.WriteLine(numbers["five"]);
+            }
+            if (input == "six")
+            {
+                Console.WriteLine(numbers["six"]);
+            }
+            if (input == "seven")
+            {
+                Console.WriteLine(numbers["seven"]);
+            }
+            if (input == "eight")
+            {
+                Console.WriteLine(numbers["eight"]);
+            }
+            if (input == "nine")
+            {
+                Console.WriteLine(numbers["nine"]);
+            }
+            if (input == "10")
+            {
+                Console.WriteLine(numbers["10"]);
+            }
+            
             return input;
 
         }

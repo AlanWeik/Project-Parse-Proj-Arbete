@@ -30,7 +30,7 @@ namespace Project_Parse_xUnitTest
                 number.Add("one", 1);
                 if (number.ContainsValue(1))
                 {
-                    return;
+                    output.WriteLine("Contains 1");
                 }
 
                 /*if (input == "one")
