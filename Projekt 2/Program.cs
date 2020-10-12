@@ -9,6 +9,7 @@ namespace Projekt_2
         static void Main(string[] args)
         {
             ReturnValueFromStringToDouble(); // Kallar på Dicitionary metoden.
+            CalculateValueFromStringToDouble();
         }
         public static string ReturnValueFromStringToDouble() // Metod som testar datastruktur och skriver ut sifforir vid text inmatning.
         {
@@ -40,6 +41,10 @@ namespace Projekt_2
             }
             while (input != "one");
             return (input); // Returnernar input värde och skriver ut på skärmen.
+        }
+        public static double CalculateValueFromStringToDouble() //Metod för att räkna ut konverterad data.
+        {
+            return 0;
         }
     }
 }
