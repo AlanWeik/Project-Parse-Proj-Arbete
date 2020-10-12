@@ -22,12 +22,20 @@ namespace Projekt_2
                     Console.Write("Type one:  ");
                     input = Console.ReadLine();
                     stringNumbers.Add("one", 1); // Adderar värde .Add() metod
+                    stringNumbers.Add("two", 2);
+                    stringNumbers.Add("three", 3);
+                    stringNumbers.Add("four", 4);
+                    stringNumbers.Add("five", 5);
+                    stringNumbers.Add("six", 6);
+                    stringNumbers.Add("seven", 7);
+                    stringNumbers.Add("eight", 8);
+                    stringNumbers.Add("nine", 9);
                     if (input == "one")
                     {
                         Console.WriteLine(stringNumbers["one"]);
                     }
                     if (input != "one")
-                    {
+                    { 
                         Console.WriteLine($"Fel inmatning! Skriv bara 'one' ");
                     }
                     Console.ReadKey();

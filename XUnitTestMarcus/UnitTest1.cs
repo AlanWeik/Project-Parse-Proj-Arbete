@@ -7,23 +7,23 @@ namespace XUnitTestMarcus
     public class UnitTest1
     {
         [Fact]
-        public void TestValueConverter()
+        public void TestValueConverter() // Dennna metod skall konverta text till siffror, alltså inmatning = "one" skriv ut en "1"
         {
             string input = "";
             do
             {
-                input = Console.ReadLine();
+                input = "one";
                 var stringNumbers = new Dictionary<string, double>();
                 stringNumbers.Add("one", 1);
                 if (input == "one")
-                {
-                    Console.WriteLine(input);
+                {                 
+                    Assert.Equal(1, stringNumbers["one"]);
                 }
                 else
                 {
                     Console.WriteLine("Fel inmatning!");
                 }
-            } while (input != "one");
+            } while (input != "one");  // Passed!!!!
         }
     }
 }
