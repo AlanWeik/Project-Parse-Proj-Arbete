@@ -9,10 +9,10 @@ namespace ProjektArbete
     {
         static void Main(string[] args)
         {
-            ReturnValueFromStringToDouble();
+            LinkStringToDouble();
         }
 
-        public static string ReturnValueFromStringToDouble()
+        public static string LinkStringToDouble()
         {
             string input;
 
@@ -78,9 +78,10 @@ namespace ProjektArbete
             {
                 Console.WriteLine(numbers["10"]);
             }
-            
+
             return input;
 
         }
+
     }
 }
