@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Globalization;
 
 namespace Projekt_2
@@ -8,49 +9,35 @@ namespace Projekt_2
     {
         static void Main(string[] args)
         {
-            ReturnValueFromStringToDouble(); // Kallar på Dicitionary metoden.
-            CalculateValueFromStringToDouble();
-        }
-        public static string ReturnValueFromStringToDouble() // Metod som testar datastruktur och skriver ut sifforir vid text inmatning.
-        {
-            string input = ""; // Användar input.
-            do
-            {
-                try
-                {
-                    var stringNumbers = new Dictionary<string, double>(); // Dicitionary för keywords.
-                    Console.Write("Type one:  ");
-                    input = Console.ReadLine();
-                    stringNumbers.Add("one", 1); // Adderar värde .Add() metod
-                    stringNumbers.Add("two", 2);
-                    stringNumbers.Add("three", 3);
-                    stringNumbers.Add("four", 4);
-                    stringNumbers.Add("five", 5);
-                    stringNumbers.Add("six", 6);
-                    stringNumbers.Add("seven", 7);
-                    stringNumbers.Add("eight", 8);
-                    stringNumbers.Add("nine", 9);
-                    if (input == "one")
-                    {
-                        Console.WriteLine(stringNumbers["one"]);
-                    }
-                    if (input != "one")
-                    { 
-                        Console.WriteLine($"Fel inmatning! Skriv bara 'one' ");
-                    }
-                    Console.ReadKey();
-                }
-                catch (Exception e) // Felmeddelande.
-                {
-                    Console.WriteLine(e);
-                    throw;
-                }
+            Console.Write("> Type: ");
+            string userInput = Console.ReadLine();
 
-            }
-            while (input != "one");
-            return (input); // Returnernar input värde och skriver ut på skärmen.
+
+            // Kallar på metoder.
+            ReturnValueFromStringToDouble();
+            CalculateValueFromStringToDouble();
+
+            var stringToNumberDictionarie = new Dictionary<string, double>() // Skapar Dictionary för nyckelord som består av ett double värde.
+            {
+                { "zero", 0},
+                { "one",  1},
+                { "two", 2},
+                { "three", 3},
+                { "four", 4},
+                { "five", 5},
+                { "six", 6},
+                { "seven", 7},
+                { "eight", 8},
+                { "nine", 9},
+                { "ten", 10},
+            };
+            Console.WriteLine();
         }
-        public static double CalculateValueFromStringToDouble() //Metod för att räkna ut konverterad data.
+        public static double ReturnValueFromStringToDouble() // Returnerar värde från sträng till double.
+        {
+            return 0;
+        }
+        public static double CalculateValueFromStringToDouble() // Räknar ut värde från sträng till double.
         {
             return 0;
         }
