@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Runtime.CompilerServices;
 using System.Security.Cryptography.X509Certificates;
 
@@ -7,14 +8,17 @@ namespace ProjektArbete
 {
     public class Program
     {
+
+
         static void Main(string[] args)
         {
-            LinkStringToDouble();
+            string userInput = Console.ReadLine();
+            var numbers = LinkStringToDouble(userInput);
         }
 
-        public static string LinkStringToDouble()
+
+        public static double LinkStringToDouble(string userInput)
         {
-            string input;
 
             Dictionary<string, double> numbers = new Dictionary<string, double>();
             numbers.Add("zero", 0);
@@ -29,12 +33,17 @@ namespace ProjektArbete
             numbers.Add("nine", 9);
             numbers.Add("ten", 10);
 
+            if (numbers.TryGetValue(userInput, out double UserInputAsNumber))
+            {
+                return UserInputAsNumber;
+            }
+            else
+            {
+                return - 1;
+            }
 
-            Console.WriteLine("Choose a number between zero and ten:");
-            input = Console.ReadLine();
 
-
-            if (input == "zero")
+            /*if (input == "zero")
             {
                 Console.WriteLine(numbers["zero"]);
             }
@@ -77,9 +86,9 @@ namespace ProjektArbete
             if (input == "10")
             {
                 Console.WriteLine(numbers["10"]);
-            }
+            }*/
 
-            return input;
+            //return input;
 
         }
 

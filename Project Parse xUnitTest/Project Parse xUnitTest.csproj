@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Projekt 2\Project Parse.csproj" />
+    <ProjectReference Include="..\Tester\Evaluate.csproj" />
   </ItemGroup>
 
 </Project>

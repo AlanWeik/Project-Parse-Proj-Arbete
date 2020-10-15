@@ -9,12 +9,14 @@ using Xunit.Sdk;
 using Xunit.Abstractions;
 using Microsoft.VisualBasic.CompilerServices;
 using System.Data.Common;
+using ProjektArbete;
+using Microsoft.VisualStudio.TestPlatform.Common.Interfaces;
 
 namespace Project_Parse_xUnitTest
 {
     public class UnitTest1AW
     {
-        private readonly ITestOutputHelper output;
+        /*private readonly ITestOutputHelper output;
 
         public UnitTest1AW(ITestOutputHelper output)
         {
@@ -22,19 +24,20 @@ namespace Project_Parse_xUnitTest
         }
 
 
-       [Fact]
-        public void ConvertsOrNo()
-        {
-            {
-                string input = "one";
-                var number = new Dictionary <string, double>();
-                number.Add("one", 1);
-                if (number.ContainsValue(1))
-                {
-                    output.WriteLine("Contains 1");
-                }
-            }
-        }
+        [Fact]
+         public void ConvertsOrNo()
+         {
+             {
+                 //string input = "one";
+
+                 var number = new Dictionary <string, double>();
+                 number.Add("one", 1);
+                 if (number.ContainsValue(1))
+                 {
+                     output.WriteLine("Contains 1");
+                 }
+             }
+         }
 
         [Fact]
         public void EqualOrNot()
@@ -59,8 +62,28 @@ namespace Project_Parse_xUnitTest
             double sum = numbers["one"] + numbers["one"];
             //Assert
             Assert.Equal(expected, sum);
+        }*/
+
+
+       /* [Fact]
+        public void TestAdditionOperator()
+        {
+            var expected = 0;
+            var actual = Program.sum;
+
+            Assert.Equal(expected, actual);
+        }*/
+
+        [Fact]
+        public void Test2()
+        {
+            var userInput = "ten";
+            var actual = Program.LinkStringToDouble(userInput);
+
+            Assert.Equal(10, actual);
 
         }
+
     }
 }
 
