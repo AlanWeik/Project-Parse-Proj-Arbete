@@ -9,7 +9,7 @@ namespace Projekt_2
 {
     public static class Program
     {
-        // one plus two
+        // one plus two.
         // five plus five 
         // return result
 
