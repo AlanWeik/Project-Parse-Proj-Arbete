@@ -12,22 +12,20 @@ namespace XUnitTestMarcus
         {
             var userInput = "one";
             var number = Program.TextToNumbers(userInput);
-            Assert.Equal(1, number);
+            Assert.Equal(1, number);  // Success!
         }
-        /*[Fact]
-        public void Operators()
-        {
-            Assert.Equal(3, Program.Operators("one plus two"));
-        }
+
         [Fact]
-        public void Calculate()
+        public void TextToOperators()
         {
-            Assert.Equal(10, Program.Calculate("five plus five"));
+            var userInput = "one plus two";
+            var operate = Program.TextToOperators(userInput);
+            Assert.Equal(3, operate);
         }
         [Fact]
         public void ReturnResult()
         {
             Assert.Equal(10, Program.ReturnResult("The answer is: 10!"));
-        }*/
+        }
     }
 }
