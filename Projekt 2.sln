@@ -7,8 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Project Parse", "Projekt 2\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Project Parse xUnitTest", "Project Parse xUnitTest\Project Parse xUnitTest.csproj", "{04D04345-D0FB-428C-9FB8-06834A412301}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Evaluate", "Tester\Evaluate.csproj", "{EDD2DB09-0A16-496A-8120-4FF8707235F5}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{04D04345-D0FB-428C-9FB8-06834A412301}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04D04345-D0FB-428C-9FB8-06834A412301}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04D04345-D0FB-428C-9FB8-06834A412301}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EDD2DB09-0A16-496A-8120-4FF8707235F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EDD2DB09-0A16-496A-8120-4FF8707235F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EDD2DB09-0A16-496A-8120-4FF8707235F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EDD2DB09-0A16-496A-8120-4FF8707235F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

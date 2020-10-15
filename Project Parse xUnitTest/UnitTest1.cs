@@ -75,12 +75,12 @@ namespace Project_Parse_xUnitTest
         }*/
 
         [Fact]
-        public void Test2()
+        public void TestBasicConversion()
         {
             var userInput = "ten";
             var actual = Program.LinkStringToDouble(userInput);
 
-            Assert.Equal(10, actual);
+            Assert.Equal(10, actual); // Testar ifall ifall "ten" och 10 har samma värde. 
 
         }
 

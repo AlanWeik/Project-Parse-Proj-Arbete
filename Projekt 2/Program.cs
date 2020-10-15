@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
+using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Security.Cryptography.X509Certificates;
 
@@ -9,13 +10,12 @@ namespace ProjektArbete
     public class Program
     {
 
-
         static void Main(string[] args)
         {
+            Console.WriteLine("Type a number in text: ");
             string userInput = Console.ReadLine();
             var numbers = LinkStringToDouble(userInput);
         }
-
 
         public static double LinkStringToDouble(string userInput)
         {
@@ -32,6 +32,7 @@ namespace ProjektArbete
             numbers.Add("eight", 8);
             numbers.Add("nine", 9);
             numbers.Add("ten", 10);
+            
 
             if (numbers.TryGetValue(userInput, out double UserInputAsNumber))
             {
@@ -39,58 +40,9 @@ namespace ProjektArbete
             }
             else
             {
-                return - 1;
+                return -1;
             }
-
-
-            /*if (input == "zero")
-            {
-                Console.WriteLine(numbers["zero"]);
-            }
-            if (input == "one")
-            {
-                Console.WriteLine(numbers["one"]);
-            }
-            if (input == "two")
-            {
-                Console.WriteLine(numbers["two"]);
-            }
-            if (input == "three")
-            {
-                Console.WriteLine(numbers["three"]);
-            }
-            if (input == "four")
-            {
-                Console.WriteLine(numbers["four"]);
-            }
-            if (input == "five")
-            {
-                Console.WriteLine(numbers["five"]);
-            }
-            if (input == "six")
-            {
-                Console.WriteLine(numbers["six"]);
-            }
-            if (input == "seven")
-            {
-                Console.WriteLine(numbers["seven"]);
-            }
-            if (input == "eight")
-            {
-                Console.WriteLine(numbers["eight"]);
-            }
-            if (input == "nine")
-            {
-                Console.WriteLine(numbers["nine"]);
-            }
-            if (input == "10")
-            {
-                Console.WriteLine(numbers["10"]);
-            }*/
-
-            //return input;
 
         }
-
     }
 }
